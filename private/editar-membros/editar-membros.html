@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gerenciar Áreas de Atuação</title>
+  <link rel="stylesheet" href="editar-membros.css" />
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script src="/extensao/private/editar-membros.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body onload="mostrarEquipe()">
+  <header>
+    <h1 id="headerText">Editar Membros da Equipe</h1>
+  </header>
+
+  <main>
+    <div class="container">
+      <label for="nomeMembro">Nome do Membro:</label>
+      <input type="text" id="nomeMembro"/>
+
+      <div class="button-container">
+        <button id="btnUpdate" onclick="salvar()">Confirmar</button>
+      </div>
+
+      <table id="tabelaEquipe">
+        <thead>
+          <tr>
+            <th>Ações</th>
+            <th>ID</th>
+            <th>Nome do Membro</th>
+          </tr>
+        </thead>
+        <tbody id="corpoTabelaEquipe">
+          <!-- Linhas adicionadas dinamicamente -->
+        </tbody>
+      </table>
+      <div class="botao-voltar">
+        <button onclick="history.back()" class="botaoVoltar">↩️ Voltar</button>
+      </div>
+    </div>
+  </main>
+
+</body>
+
+</html>

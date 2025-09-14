@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalhes do Projeto</title>
+  <link rel="stylesheet" href="ver-mais.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="ver-mais.js"></script>
+</head>
+
+<body onload="mostrarProjeto()">
+
+  <div class="main-container">
+
+    <main class="project-details">
+      <div class="titulo">
+        <h1 id="titulo-area"></h1>
+        <h2 id="area"></h2>
+      </div>
+      <section class="detail-card">
+        <h2>Descrição</h2>
+        <p id="descricao"></p>
+      </section>
+
+      <section class="detail-card">
+        <h2>Estágio atual:</h2>
+        <p id="estagio"></p>
+      </section>
+
+      <section class="detail-card">
+        <h2>Fundos</h2>
+        <p id="fundo-atual"></p>
+        <p id="meta-fundos"></p>
+      </section>
+      <section class="detail-card">
+        <h2>Equipe:</h2>
+        <p id="membro"></p>
+      </section>
+
+      <div class="botao-voltar">
+        <button onclick="history.back()" class="botaoVoltar">↩️ Voltar</button>
+      </div>
+    </main>
+  </div>
+</body>
+
+</html>

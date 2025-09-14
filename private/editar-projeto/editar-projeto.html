@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar projeto</title>
+    <link rel="stylesheet" href="editar-projeto.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="editar-projeto.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1 id="headerText">Editar Projeto</h1>
+    </header>
+
+    <main>
+        <div class="container">
+            <label for="inputTitle">Título:</label>
+            <input type="text" id="inputTitle">
+
+            <div class="four-inputs">
+                <div class="input-container">
+                    <label for="areaDeAtuacao">Área de atuação:</label>
+                    <select id="areaDeAtuacao">
+
+                    </select>
+                </div>
+
+                <div class="input-container">
+                    <label for="metaDeFundos">Meta de fundos:</label>
+                    <input type="text" id="metaDeFundos"> <!-- Formatar valor com javascript se possivel -->
+                </div>
+
+                <div class="input-container">
+                    <label for="fundosAtuais">Fundos atuais:</label>
+                    <input type="text" id="fundosAtuais"> <!-- Formatar valor com javascript se possivel -->
+                </div>
+
+                <div class="input-container">
+                    <label for="devEstagio">Estágio de desenvolvimento:</label>
+                    <select id="devEstagio">
+                        <option></option>
+                    </select>
+                </div>
+                <button onclick="editarMembros()">Editar Membros</button>
+            </div>
+
+            <!-- Sera inserido cada campo com javascript -->
+            <div id="membros-container">
+            </div>
+            <label for="descricao-input">Descrição</label>
+            <textarea id="inputDesc"></textarea>
+
+            <div class="button-container">
+                <button onclick="history.back()" class="botaoVoltar">↩️ Voltar</button>
+                <button onclick="atualizar()">Publicar</button>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus projetos</title>
+    <link rel="stylesheet" href="meus-projetos.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script src="/extensao/private/meus-projetos.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body onload="mostrarProjeto()">
+    <header>
+        <h1 id="headerText">Meus Projetos</h1>
+    </header>
+
+    <main>
+        <div class="controllers">
+            <h2>ADMINISTRAÇÃO</h2>
+            <div class="buttons">
+                <button><a href="areas-atuacao.html">ÁREAS DE ATUAÇÃO</a></button>
+                <button><a href="desenvolvimento.html">DESENVOLVIMENTO</a></button> 
+                <button><a href="criar-projeto.html">CRIAR PROJETO</a></button> 
+            </div>
+        </div>
+        <div class="container">
+            <table id="tabelaProjetos">
+        <thead>
+          <tr>
+            <th>Ações</th>
+            <th>ID</th>
+            <th>Nome do Projeto</th>
+          </tr>
+        </thead>
+        <tbody id="corpoTabelaProjetos">
+          <!-- Linhas adicionadas dinamicamente -->
+        </tbody>
+      </table>
+        </div>
+        
+    </main>
+</body>
+</html>

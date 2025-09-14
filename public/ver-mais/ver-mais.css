@@ -1,0 +1,64 @@
+* {
+  font-family: 'Inter', sans-serif;
+  box-sizing: border-box;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.titulo{
+  display: flex;
+  flex-direction: column;
+}
+.project-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: min(900px, 80%);
+  gap: 20px;
+}
+
+.detail-card {
+  background-color: white;
+  padding: 20px;
+  width: 100%; 
+  /* max-width: 600px;
+  border-radius: 8px; */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.detail-card h2 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.detail-card p {
+  color: #555;
+}
+.botao-voltar {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+button {
+    width: 20%;
+    padding: 10px;
+    font-size: 20px;
+    background-color: #3292FF;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: max-content;
+}
+
+button:hover{
+    background-color: #3b7bc4;
+}
+

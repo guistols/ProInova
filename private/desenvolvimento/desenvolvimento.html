@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Estágios de desenvolvimento</title>
+  <link rel="stylesheet" href="desenvolvimento.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script src="/extensao/private/desenvolvimento.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body onload="mostrarEstagio()"> 
+  <header>
+    <h1 id="headerText">Estágios de desenvolvimento</h1>
+  </header>
+
+  <main>
+    <div class="container">
+      <label for="nomeEstagio">Estágio:</label>
+      <input type="text" id="nomeEstagio" placeholder="Ex: estágio 1, estágio 2" />
+
+      <div class="button-container">
+        <button onclick="salvar()" id="btnCadastrar">Cadastrar Estagio</button>
+      </div>
+
+      <table id="tabelaEstagios" aria-label="Tabela de Estágios de Desenvolvimento">
+        <thead>
+          <tr>
+            <th>Ações</th>
+            <th>ID</th>
+            <th>Estágio</th>
+          </tr>
+        </thead>
+        <tbody id="corpoTabelaEstagio">
+          <!-- Linhas adicionadas dinamicamente -->
+        </tbody>
+      </table>
+      <div class="botao-voltar">
+        <button onclick="history.back()" class="botaoVoltar">↩️ Voltar</button>
+      </div>
+    </div>
+  </main>
+
+</body>
+
+</html>
