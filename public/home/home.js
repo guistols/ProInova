@@ -28,7 +28,7 @@ function criarDivProjeto(dados) {
         const div = document.createElement("div")
         div.classList.add("card")
         div.innerHTML =
-            `<h2>${projeto.nome}</h2><div class="botao-desc"><p>${projeto.descricao}</p><a onclick="verMaisProjeto(${projeto.id})">Ver mais</a></div>`
+            `<h2>${projeto.nome}</h2><div class="botao-desc"><p>${projeto.descricao}</p></div><div class="botao"><a onclick="verMaisProjeto(${projeto.id})">Ver mais</a></div>`
  
         container.appendChild(div)
     }
