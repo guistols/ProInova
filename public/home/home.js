@@ -37,5 +37,5 @@ function criarDivProjeto(dados) {
  
 function verMaisProjeto(id){
     console.log(id)
-    window.location.href = `ver-mais.html?id=${id}`;
+    window.location.href = `../public/ver-mais/ver-mais.html?id=${id}`;
 }
