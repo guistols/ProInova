@@ -80,5 +80,5 @@ async function apagarProjeto(idelete) {
 
 
 function editarProjeto(id) {
-    window.location.href = `editar-projeto.html?id=${id}`;
+    window.location.href = `../editar-projeto/editar-projeto.html?id=${id}`;
 }

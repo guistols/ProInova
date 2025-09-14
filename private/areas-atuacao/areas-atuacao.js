@@ -33,10 +33,11 @@ async function criarArea(areaAtuacao) {
       'Content-Type': 'application/json',
       'Prefer': 'return=representation'
     },
+  
     //lê em formato json
     body: JSON.stringify(areaAtuacao)
   });
-
+  alert("Área incluida com sucesso!")
   const dados = await resposta.json();
   console.log(dados);
   mostrarArea();
